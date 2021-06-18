@@ -1,0 +1,39 @@
+<h2>Student Details:</h2>  
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stud of students, index as i">
+            <td>
+                <a routerLink="/student-list/{{stud.name}}/{{stud.phone}}/{{stud.email}}"> {{stud.name}}</a>
+            </td>
+            <td>
+                <a routerLink="/student-list/{{stud.name}}/{{stud.phone}}/{{stud.email}}"> {{stud.phone}} </a>
+            </td>
+            <td>
+                <a (click)=deleteStudent(stud.id,i)>| Delete |</a>
+                <a (click)=editStudent(stud)> Edit |</a>
+                <a (click)=studentDetails(stud)> View |</a>
+            </td>
+        </tr>
+    </tbody>   
+</table>
+
+
+<!-- <div *ngFor="let stud of students">  
+    <a routerLink="/student-list/{{stud.name}}/{{stud.phone}}/{{stud.email}}"> Id : {{stud.name}}, Name : {{stud.phone}} </a>  
+</div>  -->
+<!-- <div *ngIf="student.id">
+    your current selection : Id - {{student.id}}, Name - {{student.name}}, Marks - {{student.marks}}
+</div> -->

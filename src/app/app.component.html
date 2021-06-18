@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default" style="background-color: #323b38;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand text-color-white" href="#">Student Record Management.</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/home" class="text-color-white">Home</a></li>
+      <li>
+        <a routerLink="/addStudent" class="text-color-white">Add Student</a>
+      </li>
+      <li>
+        <a routerLink="/studentList" class="text-color-white">List Student</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div style="margin-left:2%; margin-top:1.5%; margin-right: 5%;">
+  <router-outlet></router-outlet>
+</div>
+

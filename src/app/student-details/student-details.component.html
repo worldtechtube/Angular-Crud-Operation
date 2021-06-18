@@ -1,0 +1,12 @@
+<h2>Selected Student Details</h2>
+<h5>This is the details for <b>{{studentModel.name}}</b></h5>
+<div><b>Id: </b>{{studentModel.id}}</div>
+<div><b>Email Address: </b>{{studentModel.email}}</div>
+<div><b>Phone: </b>{{studentModel.phone}}</div>
+<div><b>Gender: </b>{{studentModel.gender}}</div>
+<div><b>Blood group: </b>{{studentModel.bloodGroup}}</div>
+<div><b>Course: </b>{{studentModel.course}}</div>
+<div><b>Street: </b>{{studentModel.address.street}}</div>
+<div><b>City: </b>{{studentModel.address.city}}</div>
+<div><b>State: </b>{{studentModel.address.state}}</div>
+<div><a (click)="gotoStudentList()">Back</a></div>
